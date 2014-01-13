@@ -1,4 +1,4 @@
-%_javapackages_macros
+%{?_javapackages_macros:%_javapackages_macros}
 Name:          xmlstreambuffer
 Version:       1.5.1
 Release:       3.0%{?dist}
@@ -79,5 +79,21 @@ sed -i 's/\r//' LICENSE.txt
 %files -f .mfiles
 %doc LICENSE.txt
 
-%files javadoc -f .mfiles-javadoc
+%files -f .mfiles-javadoc
 %doc LICENSE.txt
+
+%changelog
+* Sun Aug 04 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.5.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* Sat Jun 29 2013 gil cattaneo <puntogil@libero.it> 1.5.1-2
+- switch to XMvn, minor changes to adapt to current guideline
+
+* Tue Oct 30 2012 gil cattaneo <puntogil@libero.it> 1.5.1-1
+- update to 1.5.1
+
+* Wed Oct 03 2012 gil cattaneo <puntogil@libero.it> 1.5-1
+- update to 1.5
+
+* Sat Mar 31 2012 gil cattaneo <puntogil@libero.it> 1.4-1
+- initial rpm
