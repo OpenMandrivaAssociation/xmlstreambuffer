@@ -79,7 +79,7 @@ sed -i 's/\r//' LICENSE.txt
 %files -f .mfiles
 %doc LICENSE.txt
 
-%files -f .mfiles-javadoc
+%files javadoc -f .mfiles-javadoc
 %doc LICENSE.txt
 
 %changelog
