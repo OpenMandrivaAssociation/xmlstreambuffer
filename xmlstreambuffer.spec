@@ -4,7 +4,7 @@ Version:       1.5.1
 Release:       3.0%{?dist}
 Summary:       XML Stream Buffer
 License:       CDDL or GPLv2 with exceptions
-Url:           http://java.net/projects/xmlstreambuffer/
+Url:           https://java.net/projects/xmlstreambuffer/
 # svn export https://svn.java.net/svn/xmlstreambuffer~svn/tags/streambuffer-1.5.1/ xmlstreambuffer-1.5.1
 # find xmlstreambuffer-1.5.1/ -name '*.class' -delete
 # find xmlstreambuffer-1.5.1/ -name '*.jar' -delete
